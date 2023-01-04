@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+@layer utilities {
+  .overflow-overlay {
+    overflow: overlay;
+  }
+
+  .home-background {
+    background-image: url("/yo.gif");
+  }
+
+  .pyramid-background {
+    background-image: url("https://i.ibb.co/wMVnNGV/pyramidspic.jpg");
+  }
+
+  .babylon-background {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi4.mirror.co.uk%2Fincoming%2Farticle1872880.ece%2Falternates%2Fs2197%2FHanging-gardens-of-Babylon.jpg&f=1&nofb=1&ipt=49301fc5b6d4cc13598e9b761d74d7dde649f3a1befdd65fe76982911ab1a89a&ipo=images");
+  }
+
+  .infoSquareTextAnimation {
+    animation: fadein 1.5s ease-in alternate 1;
+  }
+  .vertical-text {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -5px;
+  }
+  .socials-icon:hover {
+    transform: scale(1.2, 1.2);
+  }
+
+  .socials-icon:active {
+    transform: scale(0.9, 0.9);
+  }
+
+  .olympia-background {
+    background-image: url("https://media.mutualart.com/Images/2019_05/09/12/120233914/a8d70d6c-d77a-41a5-8148-e0ce6259d074.Jpeg");
+  }
+  .artemis-background {
+    background-image: url("https://www.history.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTY2MDc1NjY2OTc3MDA3NTYz/7-wonders-of-ancient-world-temple-of-artemis-ephesus-gettyimages-122225790.webp");
+  }
+
+  .halicarnassus-background {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.worldhistory.org%2Fimg%2Fc%2Fp%2F1200x627%2F12902.png&f=1&nofb=1&ipt=21068510ece06f38c98423d743b19fe1ae808285fc91e6326712ab6c1bff7766&ipo=images");
+  }
+
+  .colossus-background {
+    background-image: url("https://www.history.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTY2MDc1OTg1MDczMDIyNjA2/7-wonders-of-ancient-world-colossus-of-rhodes-gettyimages-464450539.webp");
+  }
+
+  .lighthouse-background {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F07%2F172307-050-4D3BA855%2FPharos-Alexandria.jpg&f=1&nofb=1&ipt=847c4105b31758840a2800c6c944be21b91f0af8e269ca0f98abd4daca1898f9&ipo=images");
+  }
+
+  .navbar-item--hover:hover {
+    border-bottom: white solid 1.5px;
+    margin-top: -1.5px;
+  }
+}
