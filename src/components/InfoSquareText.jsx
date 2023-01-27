@@ -4,6 +4,7 @@ import { FaAngleDoubleRight, FaShareSquare } from "react-icons/fa";
 import Popup from "./Popup";
 
 function InfoSquareText(props) {
+  //this component is used in consts.jsx
   const [popupToggle, setPopupToggle] = useState(false);
   function closePopup() {
     setPopupToggle(false);
@@ -39,6 +40,7 @@ function InfoSquareText(props) {
       {popupToggle ? (
         <Popup
           closePopup={closePopup}
+          popupToggle={popupToggle}
           header={props.header}
           information={props.information}
         />

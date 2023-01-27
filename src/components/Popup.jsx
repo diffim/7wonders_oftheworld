@@ -2,7 +2,9 @@ import React from "react";
 
 function Popup(props) {
   return (
-    <div className="bg-black/70 top-0 left-0 fixed z-50 w-screen h-screen">
+    <div
+      className={`bg-black/70  transition-all  top-0 left-0 fixed z-50 w-screen h-screen`}
+    >
       <div className="justify-center flex w-full h-screen  ">
         <div className="w-5/6 h-[93%] relative overflow-overlay bg-black/70 m-10 ml-20   px-20  py-20">
           <div

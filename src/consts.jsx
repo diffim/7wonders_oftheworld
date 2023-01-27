@@ -276,6 +276,7 @@ export const INFO_BABYLON = (
     <InfoSquareText
       header="Hanging Gardens of Babylon."
       paragraph="Ancient gardens considered one of the Seven Wonders of the World and thought to have been located near the royal palace in Babylon."
+      babylonIsVisible={true}
       information={
         <>
           <p>
