@@ -31,7 +31,7 @@ function ContactInfo() {
           className="opacity-0 group-hover:opacity-100 transition-all
            duration-700 flex     justify-evenly items-center flex-col"
         >
-          <SocialsItem link="https://www.instagram.com/kdiffim/">
+          <SocialsItem link="https://www.instagram.com/apeysincore/">
             <FaInstagram
               size={29}
               className="socials-icon transition-all duration-200"
